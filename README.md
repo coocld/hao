@@ -3,13 +3,20 @@
 ## 前端开发服务器
 
 https://github.com/coocld/devProxy
+
 安装 `npm -g install devProxy`
+
 运行 `devProxy`
+
+通过将数据请求转发到远程服务器, 来在本地开发环境中模拟服务器环境, 以实现完整的网站功能
+脚本执行时会从当前目录载入proxyConfig.js
 
 ## 前端发布工具
 
 https://github.com/coocld/siteBuild
+
 安装 `npm -g install siteBuild`
+
 运行 `siteBuild [网站目录] [-f]`
 
 网站目录需要包含 framework/sea-config.js 或 framework/require-config.js
