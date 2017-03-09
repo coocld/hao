@@ -1,7 +1,7 @@
 'use strict';
 //devProxy config
 module.exports = {
-    remote: 'https://xxoo.github.io/',
+    remote: 'https://www.baidu.com/',
     local: {
         prefix: '/hao/',
         root: './',
