@@ -1,5 +1,5 @@
 'use strict';
-define(['module', 'common/kernel/kernel'], function(module, kernel) {
+define(['module', 'common/kernel/kernel', 'common/vue/vue'], function(module, kernel, Vue) {
 	var thisPage = module.id.replace(/^[^/]+\/|\/[^/]+/g, ''),
 		dom = $('#' + thisPage);
 	var i = 0;
@@ -7,6 +7,13 @@ define(['module', 'common/kernel/kernel'], function(module, kernel) {
 		i++;
 		kernel.openPanel('samplePanel', i);
 	});
+
+	var app6 = new Vue({
+	  el: '#app-6',
+	  data: {
+	    message: 'Hello Vue!'
+	  }
+	})
 	return {
 		onload: function(force) {
 			// if (force) {
